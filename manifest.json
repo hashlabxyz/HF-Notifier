@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "HackForums Notifier",
+    "description": "This extension will alert you as soon as you receive a PM, new reputation points,or a new reply on one of your threads.",
+    "version":"0.1",
+
+    "browser_action": {
+        "default_popup":"popup.html"
+    },
+
+    "permissions": [
+        "alarms",
+        "storage",
+        "notifications",
+        "tabs",
+        "http://hackforums.net/"
+    ],
+
+    "background": {
+        "scripts": ["scripts/jquery.min.js", "scripts/background.js"]
+    }
+}
